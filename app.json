@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "World Clock",
+    "slug": "world-clock-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.worldclock.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "World Clock can use your location to show your local time zone automatically."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#5B3FF0"
+      },
+      "package": "com.worldclock.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#5B3FF0"
+        }
+      ]
+    ]
+  }
+}
