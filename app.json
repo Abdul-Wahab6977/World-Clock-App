@@ -29,7 +29,8 @@
     },
     "web": {
       "bundler": "metro",
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "static"
     },
     "plugins": [
       "expo-font",
@@ -40,7 +41,9 @@
           "imageWidth": 160,
           "backgroundColor": "#5B3FF0"
         }
-      ]
+      ],
+      "expo-router",
+      "expo-status-bar"
     ]
   }
 }
