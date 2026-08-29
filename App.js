@@ -1,3 +1,4 @@
+import '@expo/metro-runtime';
 import React, { useCallback, useEffect } from 'react';
 import { View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';

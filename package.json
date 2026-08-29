@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "doctor": "expo-doctor"
+    "doctor": "expo-doctor",
+    "build:web": "npx expo export -p web && node -e \"const fs=require('fs'); const files=fs.readdirSync('dist/_expo/static/js/web/'); const jsFile=files.find(f=>f.startsWith('AppEntry')); let html=fs.readFileSync('public/index.html','utf8'); html=html.replace('</body>', `<script src=\\\"/_expo/static/js/web/${jsFile}\\\"></script></body>`); fs.writeFileSync('dist/index.html', html); console.log('✅ index.html created in dist/');\""
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.4.2",
