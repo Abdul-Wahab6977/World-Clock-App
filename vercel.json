@@ -1,5 +1,6 @@
 {
-  "cleanUrls": true,
+  "buildCommand": "npm run build:web",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
